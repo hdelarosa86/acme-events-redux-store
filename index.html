@@ -43,7 +43,7 @@
 
         switch (action.type) {
           case 'FETCH_EVENTS':
-            state.events = [...state.events, ...action.payload];
+            state.events = action.payload;
             return state;
           case 'ADD_EVENT':
             state.events = state.events.concat([action.payload]);
